@@ -622,6 +622,11 @@ button[type="submit"] {
     width: 90%;
   }
 
+  .skills h1 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
   .projects {
     height: auto;
     min-height: 960px;
