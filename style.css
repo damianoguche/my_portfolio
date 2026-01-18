@@ -51,7 +51,9 @@ nav ul li a {
   text-decoration: none;
   font-size: 20px;
   color: #fff;
-  transition: color 0.5s, font-size 0.5s;
+  transition:
+    color 0.5s,
+    font-size 0.5s;
 }
 
 nav ul li a:hover {
@@ -646,6 +648,10 @@ button[type="submit"] {
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 0.5rem;
+  }
+
+  .arrow-icon {
+    right: 15px;
   }
 
   #contact {
