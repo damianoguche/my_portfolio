@@ -11,6 +11,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   background-color: whitesmoke;
+  overflow-x: hidden;
 }
 
 nav {
@@ -129,9 +130,8 @@ nav > a {
 }
 
 .hero {
-  /* padding-top: 10px; */
   margin-top: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   display: flex;
   align-items: center;
   min-height: 250px;
@@ -200,8 +200,7 @@ button a {
 
 .skills {
   text-align: center;
-  min-height: 450px;
-  /* border: 1px solid red; */
+  min-height: 500px;
 }
 
 .skills h1 {
@@ -220,16 +219,13 @@ button a {
   align-items: center;
   justify-content: space-evenly;
   gap: 30px;
-  /* border: 1px solid green; */
 }
 
 .section {
-  /* border: 1px solid red; */
   width: 40%;
 }
 
 .section div {
-  /* border: 1px solid green; */
   display: flex;
   align-items: center;
 }
@@ -238,7 +234,11 @@ button a {
   font-size: 45px;
   color: #395143;
   margin-right: 10px;
-  /* border: 1px solid red; */
+}
+
+.section div span.logo svg {
+  font-size: 45px;
+  margin-right: 10px;
 }
 
 .section div div {
@@ -252,7 +252,6 @@ button a {
 }
 
 input[type="range"] {
-  /* -webkit-appearance: none; */
   appearance: none;
   background: #395143;
   cursor: pointer;
@@ -281,14 +280,6 @@ progress::-moz-progress-bar {
   border-bottom: 2px solid #374e40;
 }
 
-/* #services {
-  scroll-margin-top: 60px;
-} */
-
-/* #contact {
-  scroll-margin-top: 10px;
-} */
-
 .projects h1 {
   font-size: 40px;
   font-weight: 500;
@@ -311,6 +302,16 @@ progress::-moz-progress-bar {
   margin: auto;
   font-size: 20px;
   margin-bottom: 30px;
+  text-decoration: none;
+}
+
+.projects div p a {
+  text-decoration: none;
+}
+
+.projects div p a:hover,
+a:focus {
+  text-decoration: underline;
 }
 
 /*----------Contact Section-------------*/
@@ -437,7 +438,7 @@ button[type="submit"] {
 @media (max-width: 1120px) {
   .projects {
     height: auto;
-    min-height: 720px;
+    min-height: 800px;
   }
 
   .skills {
@@ -507,18 +508,9 @@ button[type="submit"] {
     margin: 90px 0px 100px;
   }
 
-  input[type="text"] {
-    width: 400px;
-  }
-
-  input[type="email"] {
-    width: 400px;
-  }
-
-  textarea {
-    width: 400px;
-  }
-
+  input[type="text"],
+  input[type="email"],
+  textarea,
   button[type="submit"] {
     width: 400px;
   }
@@ -526,10 +518,6 @@ button[type="submit"] {
   .contact-details {
     margin-bottom: 30px;
   }
-
-  /* .message {
-    padding: 0px 20%;
-  } */
 
   .hero {
     margin-top: 100px;
@@ -547,7 +535,8 @@ button[type="submit"] {
   }
 
   .skills {
-    height: 750px;
+    height: auto;
+    min-height: 750px;
   }
 
   .skills div.skill-details {
@@ -561,15 +550,12 @@ button[type="submit"] {
     width: 55%;
   }
 
+  .projects {
+    height: auto;
+  }
+
   .contact {
     padding-bottom: 50px;
-  }
-}
-
-@media (min-width: 450px) and (max-width: 850px) {
-  .projects {
-    height: 30%;
-    margin-bottom: 15%;
   }
 }
 
@@ -606,6 +592,7 @@ button[type="submit"] {
   .hero {
     margin-top: 140px;
     text-align: center;
+    margin-bottom: 80px;
   }
 
   .hero-info {
