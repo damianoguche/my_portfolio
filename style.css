@@ -143,6 +143,11 @@ nav > a {
   font-size: 20px;
 }
 
+.hero img {
+  max-width: 100%;
+  height: auto;
+}
+
 .hero-info-2 {
   margin-top: 10px;
   font-size: 25px;
@@ -446,18 +451,6 @@ button[type="submit"] {
   }
 }
 
-@media (max-width: 970px) {
-  .projects {
-    height: auto;
-    min-height: 750px;
-  }
-
-  .about {
-    height: auto;
-    min-height: 480px;
-  }
-}
-
 @media (max-width: 1050px) {
   nav {
     display: flex;
@@ -494,6 +487,18 @@ button[type="submit"] {
   }
 }
 
+@media (max-width: 970px) {
+  .projects {
+    height: auto;
+    min-height: 750px;
+  }
+
+  .about {
+    height: auto;
+    min-height: 480px;
+  }
+}
+
 @media (max-width: 900px) {
   .about p.about-info {
     width: 80%;
@@ -512,7 +517,8 @@ button[type="submit"] {
   input[type="email"],
   textarea,
   button[type="submit"] {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
   }
 
   .contact-details {
